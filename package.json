@@ -22,11 +22,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/owl1n/typeorm-factories"
+    "url": "https://github.com/quangduc/typeorm-factories"
   },
   "author": {
-    "name": "Markin Maxim",
-    "email": "mxrkin@yandex.ru"
+    "name": "Quang Le",
+    "email": "ducquang98@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
