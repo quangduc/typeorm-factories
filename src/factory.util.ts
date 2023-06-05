@@ -59,7 +59,7 @@ export class EntityFactory<Entity, Settings> {
     public entity: ObjectType<Entity>,
     private factory: FactoryFunction<Entity, Settings>,
     private settings: Settings
-  ) { }
+  ) {}
 
   public map(
     mapFunction: (entity: Entity) => Promise<Entity>
@@ -72,7 +72,9 @@ export class EntityFactory<Entity, Settings> {
     overrideParams: EntityProperty<Entity> = {}
   ): Promise<Entity> {
     if (this.factory) {
-      let entity: Entity = await this.resolveEntity(this.factory(faker, this.settings));
+      let entity: Entity = await this.resolveEntity(
+        this.factory(faker, this.settings)
+      );
       if (this.mapFunction) {
         entity = await this.mapFunction(entity);
       }
