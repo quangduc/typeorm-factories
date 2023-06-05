@@ -1,5 +1,5 @@
-import * as Faker from "faker";
-import { ObjectType, Repository } from "typeorm";
+import { faker } from "@faker-js/faker";
+import { ObjectType } from "typeorm";
 import {
   EntityFactoryDefinition,
   EntityProperty,
@@ -72,7 +72,7 @@ export class EntityFactory<Entity, Settings> {
     overrideParams: EntityProperty<Entity> = {}
   ): Promise<Entity> {
     if (this.factory) {
-      let entity = await this.resolveEntity(this.factory(Faker, this.settings));
+      let entity = await this.resolveEntity(this.factory(faker, this.settings));
       if (this.mapFunction) {
         entity = await this.mapFunction(entity);
       }

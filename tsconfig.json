@@ -3,8 +3,6 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "declaration": true,
-    "noImplicitAny": false,
-    "noUnusedLocals": false,
     "removeComments": false,
     "noLib": false,
     "emitDecoratorMetadata": true,
@@ -15,7 +13,9 @@
     "rootDir": "./src",
     "baseUrl": "./",
     "outDir": "./dist",
-    "lib": ["es2017"]
+    "lib": [
+      "es2017"
+    ]
   },
   "include": [
     "*.ts",
@@ -28,5 +28,9 @@
     "./**/*.spec.ts",
     "examples",
     "__tests__"
+  ],
+  "lib": [
+    "es2018",
+    "DOM"
   ]
 }

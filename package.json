@@ -29,22 +29,19 @@
     "email": "mxrkin@yandex.ru"
   },
   "license": "MIT",
-  "peerDependencies": {
-    "@nestjs/common": "^9.4.2",
+  "dependencies": {
     "@faker-js/faker": "^8.0.2",
-    "rxjs": "^7.2.0",
-    "typeorm": "0.3.16"
-  },
-  "devDependencies": {
     "@nestjs/common": "^9.4.2",
-    "@faker-js/faker": "^8.0.2",
-    "@types/node": "^12.0.10",
-    "coveralls": "^3.0.4",
     "@types/jest": "29.5.0",
+    "coveralls": "^3.0.4",
+    "glob": "^10.2.6",
     "prettier": "^1.18.2",
     "rxjs": "^7.2.0",
     "ts-jest": "^29.1.0",
     "typeorm": "0.3.16",
     "typescript": "4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5"
   }
 }
